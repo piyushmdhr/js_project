@@ -8,13 +8,22 @@
       type="text/css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./js/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./css/lightslider.css" />
 
     <title>Document</title>
   </head>
   <body>
     <header>
       <div id="nav-section-1">
-        <h1 id="nav-title">DEV.TO</h1>
+        <img src="./img/FindStuff-logos_transparent.png" id="nav-title" />
         <nav>
           <ul class="menu-items">
             <li><a>Home</a></li>
@@ -30,16 +39,17 @@
 
       <div id="nav-section-2">
         <div class="categories">All Categories</div>
-        <div>
-          <input type="text" placeholder="Enter your keyword..." />
-          <button>Search</button>
+        <div class="searchSection">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="search" placeholder="Enter your keyword..." />
+          <button id="searchBtn">Search</button>
         </div>
       </div>
     </header>
 
     <main>
       <span>Home</span> > <span>Microsoft</span> >
-      <span>Microsoft Xbox One S Controller</span>
+      <span class="productTitle">Microsoft Xbox One S Controller</span>
       <div class="container">
         <div class="side-bar-1">
           <h2>Product Categories</h2>
@@ -55,111 +65,199 @@
             <li>Other</li>
           </ul>
         </div>
-        <div class="side-bar-2">
-          <h2>Top Rating</h2>
-          <ul>
-            <li>Electronics</li>
-            <li>Books</li>
-            <li>Clothing & Apparel</li>
-            <li>Health & Beauty</li>
-            <li>Home, Garden & Kitchen</li>
-            <li>Jewelry & Watches</li>
-            <li>Hot Promotions</li>
-            <li>Sports & Outdoors</li>
-            <li>Other</li>
-          </ul>
-        </div>
-        <div class="details">
-          <div>IMAGE</div>
-          <div>thumbnails</div>
-          <div>
-            DETAILS
 
-            <h1>Microsoft Xbox One S Controller</h1>
-            <h1>$109.00</h1>
-            <h1>$139.00</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-              Consetetur sadipscing elitr, sed diam nonumy eirmod. Suspendisse
-              ultrices mauris diam Donec nunc nunc, gravida vitae diam vel,
-              varius interdum erat. Quisque a nunc vel diam auctor
-            </p>
+        <div class="details">
+          <div class="inner_details">
+            <div class="item">
+              <div class="clearfix" style="max-width: 474px">
+                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                  <li data-thumb="img/thumb/cS-1.jpg">
+                    <img src="img/cS-1.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-2.jpg">
+                    <img src="img/cS-2.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-3.jpg">
+                    <img src="img/cS-3.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-4.jpg">
+                    <img src="img/cS-4.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-5.jpg">
+                    <img src="img/cS-5.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-6.jpg">
+                    <img src="img/cS-6.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-7.jpg">
+                    <img src="img/cS-7.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-8.jpg">
+                    <img src="img/cS-8.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-9.jpg">
+                    <img src="img/cS-9.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-10.jpg">
+                    <img src="img/cS-10.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-11.jpg">
+                    <img src="img/cS-11.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-12.jpg">
+                    <img src="img/cS-12.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-13.jpg">
+                    <img src="img/cS-13.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-14.jpg">
+                    <img src="img/cS-14.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-15.jpg">
+                    <img src="img/cS-15.jpg" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="productDetails">
+              <h1 class="productTitle" id="productTitle">
+                Microsoft Xbox One S Controller
+              </h1>
+              <div class="prices">
+                <span id="productPrice">$109.00</span>
+                <span id="productPriceBefore">$139.00</span>
+              </div>
+              <p id="productDescription">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                Consetetur sadipscing elitr, sed diam nonumy eirmod. Suspendisse
+                ultrices mauris diam Donec nunc nunc, gravida vitae diam vel,
+                varius interdum erat. Quisque a nunc vel diam auctor
+              </p>
+
+              <div class="addToCartSection">
+                <div>
+                  <button class="quantityBtn" id="lessItem">-</button
+                  ><input type="text" id="itemQuantity" /><button
+                    class="quantityBtn"
+                    id="moreItem"
+                  >
+                    +
+                  </button>
+                </div>
+                <button id="addToCart">Add to Cart</button>
+              </div>
+              <p>SKU: WVN-09-1-4</p>
+              <p>Category: Babies & Moms</p>
+              <p>Tags: Tag-01, Tag-04</p>
+            </div>
           </div>
-          <div>Accordian</div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            tenetur fuga odit aut aspernatur. Reprehenderit reiciendis neque
-            excepturi labore! Quaerat odit, placeat eveniet praesentium vel
-            obcaecati excepturi officia nostrum sit dolorem, natus saepe facilis
-            doloribus tenetur est, inventore qui? Dolore omnis nam ex adipisci,
-            rem quis aperiam sint aliquid non commodi soluta voluptate nobis
-            sequi nisi suscipit, qui eligendi velit modi. Iusto ratione odit
-            nemo consequatur sed, quas accusamus, error tempora modi ipsum ipsa
-            inventore laudantium. Alias, magnam! Non eos saepe rerum reiciendis
-            consectetur inventore laborum. Reprehenderit voluptas itaque saepe
-            amet laudantium impedit eius odit expedita eligendi perferendis
-            voluptatibus qui harum ut exercitationem nihil dolorum nostrum porro
-            inventore modi ex aut praesentium, nobis voluptates eveniet? Dicta
-            maxime modi dolorem rerum tempora at nulla vitae ipsum odit,
-            voluptate sed. Nihil soluta mollitia neque libero, nemo eum maxime
-            eos excepturi omnis quas quam quae, natus itaque minima nostrum
-            harum beatae alias nam reprehenderit? Laboriosam sapiente fugit,
-            excepturi, accusantium, nesciunt quam repudiandae exercitationem
-            quos veniam similique dolore explicabo voluptate earum dolores magni
-            mollitia? Iusto eaque, delectus fugiat omnis alias aperiam officia
-            maxime unde eveniet quo nam eos doloribus. Dolore nihil hic quam
-            voluptatum necessitatibus, incidunt reiciendis libero tenetur
-            delectus animi velit odit consequatur.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
-            illo harum perferendis quod, laboriosam incidunt ab, veritatis odio
-            deserunt ut accusamus officia id tenetur ipsa at? Praesentium,
-            maxime repudiandae et asperiores, temporibus veniam dolorem beatae
-            expedita accusantium exercitationem nisi. Beatae tenetur aperiam
-            ducimus non fugiat saepe. Adipisci est deserunt libero non iure
-            aperiam consectetur incidunt neque, animi excepturi! Quos,
-            dignissimos hic? Exercitationem asperiores quo quia saepe aut nisi
-            delectus dolore et autem! Suscipit iure laborum, sit architecto ipsa
-            quo officia delectus ea ipsum rerum adipisci soluta incidunt vero
-            itaque cupiditate quia voluptate eum rem placeat facere veritatis?
-            Deleniti, ratione similique!
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
-            aliquam placeat non saepe repellendus ullam, consectetur architecto
-            soluta quis? Voluptate optio, nesciunt veniam exercitationem atque
-            in dolores impedit, ullam corporis fugit officia autem voluptatibus
-            expedita voluptas non laborum ipsa facilis, itaque perferendis alias
-            quisquam tenetur. Illo quisquam vero a repudiandae, nostrum et culpa
-            ab porro modi nesciunt dolorem veniam consequatur officia animi iste
-            nobis ratione in quidem eos obcaecati minus cupiditate. A quos illum
-            quo debitis saepe doloremque fuga ipsum blanditiis aliquid ut
-            doloribus aut necessitatibus enim eaque alias, inventore
-            voluptatibus voluptas molestiae animi repudiandae qui! Nemo ducimus
-            consequatur quaerat impedit, odit officiis eos neque facilis, quos,
-            facere ullam minus earum id voluptatibus ratione deserunt omnis a
-            tempora libero voluptates illum nostrum ad voluptas. Molestias
-            repellendus quae, praesentium quasi quos eum. Sunt ad molestias
-            voluptatum perferendis repellendus doloribus recusandae illum dicta
-            commodi quae, natus obcaecati veniam sapiente sint voluptatibus
-            harum odit optio unde nesciunt quos nihil modi deserunt? Minima
-            facere non doloribus earum est sunt sequi repellat assumenda nulla,
-            optio autem, iusto laboriosam explicabo repudiandae libero, quis
-            voluptatibus a. Repellat, cupiditate. Quo temporibus officia
-            praesentium accusantium placeat mollitia quia non repudiandae, et
-            sit! Atque adipisci quasi asperiores fugiat excepturi libero.
-          </p>
+          <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1">Nunc tincidunt</a></li>
+              <li><a href="#tabs-2">Proin dolor</a></li>
+              <li><a href="#tabs-3">Aenean lacinia</a></li>
+            </ul>
+            <div id="tabs-1">
+              <p>
+                Proin elit arcu, rutrum commodo, vehicula tempus, commodo a,
+                risus. Curabitur nec arcu. Donec sollicitudin mi sit amet
+                mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa
+                et lorem. Mauris dapibus lacus auctor risus. Aenean tempor
+                ullamcorper leo. Vivamus sed magna quis ligula eleifend
+                adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
+                Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede
+                varius sollicitudin. Sed ut dolor nec orci tincidunt interdum.
+                Phasellus ipsum. Nunc tristique tempus lectus.
+              </p>
+            </div>
+            <div id="tabs-2">
+              <p>
+                Morbi tincidunt, dui sit amet facilisis feugiat, odio metus
+                gravida ante, ut pharetra massa metus id nunc. Duis scelerisque
+                molestie turpis. Sed fringilla, massa eget luctus malesuada,
+                metus eros molestie lectus, ut tempus eros massa ut dolor.
+                Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula
+                suscipit aliquam. Praesent in eros vestibulum mi adipiscing
+                adipiscing. Morbi facilisis. Curabitur ornare consequat nunc.
+                Aenean vel metus. Ut posuere viverra nulla. Aliquam erat
+                volutpat. Pellentesque convallis. Maecenas feugiat, tellus
+                pellentesque pretium posuere, felis lorem euismod felis, eu
+                ornare leo nisi vel felis. Mauris consectetur tortor et purus.
+              </p>
+            </div>
+            <div id="tabs-3">
+              <p>
+                Mauris eleifend est et turpis. Duis id erat. Suspendisse
+                potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque
+                rutrum erat, eu congue orci lorem eget lorem. Vestibulum non
+                ante. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque
+                eu urna vel enim commodo pellentesque. Praesent eu risus
+                hendrerit ligula tempus pretium. Curabitur lorem enim, pretium
+                nec, feugiat nec, luctus a, lacus.
+              </p>
+              <p>
+                Duis cursus. Maecenas ligula eros, blandit nec, pharetra at,
+                semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent
+                viverra justo vitae neque. Praesent blandit adipiscing velit.
+                Suspendisse potenti. Donec mattis, pede vel pharetra blandit,
+                magna ligula faucibus eros, id euismod lacus dolor eget odio.
+                Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut
+                sagittis. Donec nisi lectus, feugiat porttitor, tempor ac,
+                tempor vitae, pede. Aenean vehicula velit eu tellus interdum
+                rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus.
+                Vivamus a libero vitae lectus hendrerit hendrerit.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div>
-        <div>Icons</div>
-        <div>Icons</div>
-        <div>Icons</div>
-        <div>Icons</div>
+
+      <div class="care">
+        <div>
+          <div>
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <div class="care_details">
+            <h3>100% Genuine</h3>
+            <p>For all orders over $99</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <i class="fa-solid fa-rotate"></i>
+          </div>
+          <div class="care_details">
+            <h3>90 Days Return</h3>
+            <p>If goods have problems</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <i class="fa-regular fa-credit-card"></i>
+          </div>
+          <div class="care_details">
+            <h3>Secure Payment</h3>
+            <p>100% secure payment</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div class="care_details">
+            <h3>24/7 Support</h3>
+            <p>Ready to support customers</p>
+          </div>
+        </div>
       </div>
     </main>
     <footer>Copyright 2023. All Rights Reserved.</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/lightslider.js"></script>
+    <script></script>
     <script src="./js/product-details.js"></script>
   </body>
 </html>
