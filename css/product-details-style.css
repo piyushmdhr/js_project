@@ -29,6 +29,11 @@ li {
   display: inline-block;
   padding: 0 20px;
 }
+
+.menu-icons {
+  color: #dc0506;
+  font-size: 20px;
+}
 #nav-section-2 {
   background-color: #f03637;
   display: flex;
