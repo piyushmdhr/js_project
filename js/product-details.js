@@ -1,3 +1,5 @@
+// PIYUSH MANANDHAR / 8919221
+
 import { products } from "./products.js";
 
 const renderProducts = () => {

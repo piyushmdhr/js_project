@@ -1,3 +1,5 @@
+/* PIYUSH MANANDHAR / 8919221 */
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
@@ -34,6 +36,10 @@ li {
   font-weight: bold;
   color: #1f1f1f;
   font-size: 16px;
+}
+
+.menu-items li a:hover {
+  color: #dc0506;
 }
 
 .menu-icons {
@@ -92,6 +98,7 @@ li {
 
 main {
   background-color: #f1f1f1;
+  padding-bottom: 20px;
 }
 
 main > p {
@@ -242,8 +249,7 @@ main > p a {
 }
 
 #tabs-1,
-#tabs-2,
-#tabs-3 {
+#tabs-2 {
   margin: 0 20px;
   padding: 40px 20px;
 }
@@ -303,6 +309,82 @@ main > p a {
   flex-direction: column;
   padding: 0 10px;
 }
+footer {
+  margin-top: 20px;
+}
+.footer-top {
+  display: grid;
+  justify-content: center;
+  width: 80%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  margin: 20px auto;
+}
+
+.footer-bottom {
+  padding: 10px auto;
+  border: 1px solid #9e9e9e;
+}
+
+.footer-bottom p {
+  padding: 15px;
+}
+
+.footerHeader {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.info,
+.help,
+.links,
+.useful {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info a,
+.help a,
+.links a,
+.useful a {
+  color: #dc0506;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.contact h1 {
+  font-size: 24px;
+  color: #dc0506;
+  margin: 10px 0;
+}
+
+.contact p {
+  font-size: 14px;
+  margin: 20px 0;
+}
+.contact p > span {
+  font-weight: bold;
+}
+
+.contact {
+  grid-area: 1 / 1 / 4 / 3;
+}
+.info {
+  grid-area: 1 / 3 / 5 / 4;
+}
+.help {
+  grid-area: 1 / 4 / 5 / 5;
+}
+.links {
+  grid-area: 1 / 5 / 5 / 6;
+}
+.useful {
+  grid-area: 1 / 6 / 5 / 7;
+}
+
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
