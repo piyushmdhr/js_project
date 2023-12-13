@@ -1,3 +1,4 @@
+// Shravan Choudhary 8941438 and Yagnesh Mehta 8884884
 /**
  * bxSlider v4.2.1d
  * Copyright 2013-2017 Steven Wanderski

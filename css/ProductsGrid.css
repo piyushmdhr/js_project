@@ -26,7 +26,7 @@
     color: #1f1f1f;
     font-size: 16px;
   }
-  
+  nav >
   .menu-items li a:hover {
     color: #dc0506;
   }
@@ -138,6 +138,7 @@ border: 1px solid;
 .containerTwo{
     display: flex;
     gap: 1vw;
+    margin-bottom: 5vh;
 }
 .productCategories{
 margin: 2em;
@@ -286,7 +287,7 @@ footer {
     justify-content: center;
     width: 80%;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 0px;
     margin: 20px auto;
@@ -367,3 +368,4 @@ footer {
     margin-top: 20px;
     text-align: right;
 }
+/* Created by swapnilPatel 8911046 */

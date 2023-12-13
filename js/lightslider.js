@@ -1,3 +1,5 @@
+// Shravan Choudhary 8941438 and yagnesh Mehta 8884884
+
 (function ($, undefined) {
     'use strict';
     var defaults = {

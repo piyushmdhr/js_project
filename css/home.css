@@ -1,29 +1,26 @@
 main {
-    padding: 2em;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  
-  label {
-    margin-bottom: 0.5em;
-  }
-  
-  input {
-    padding: 0.5em;
-    margin-bottom: 1em;
-  }
-  
+  padding: 2em;
+}
 
-  .sliderimg{
-    width: 100% !important;
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
 
-    
-  }
-  .bxslider{
-    height: 300px!important;
-  }
+label {
+  margin-bottom: 0.5em;
+}
+
+input {
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.sliderimg {
+  width: 100% !important;
+}
+.bxslider {
+  height: 300px !important;
+}

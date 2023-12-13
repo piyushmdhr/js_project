@@ -1,3 +1,4 @@
+// Shravan Choudhary 8941438 and Yagnesh mehta 8884884
 // Sample product data (replace with actual product details)
 const products = [
   { name: "Product Name 1", price: 49.99 },
@@ -35,6 +36,46 @@ document
       displayProductDetails(selectedProduct);
     });
   });
+
+const sliders = document.querySelectorAll(".transform");
+let btnLeft = document.getElementById("left");
+let btnRight = document.getElementById("right");
+let counter = 0;
+// console.log(sliders);
+
+sliders.forEach((Slides, index) => {
+  Slides.style.left = `${index * 100}%`;
+});
+const goNext = () => {
+  counter++;
+  slideImage();
+};
+
+function goPrev() {
+  counter--;
+  slideImage();
+}
+
+function slideImage() {
+  sliders.forEach((value) => {
+    if (counter < 0) {
+      counter = sliders.length - 1;
+      value.style.transform = `translateX(-${counter * 100}%)`;
+      console.log(counter);
+    }
+    if (counter <= sliders.length - 1) {
+      value.style.transform = `translateX(-${counter * 100}%)`;
+      console.log(counter);
+    } else {
+      counter = 0;
+      value.style.transform = `translateX(-${counter * 100}%)`;
+      console.log(counter);
+    }
+  });
+}
+
+// accordian plugin
+
 $(function () {
   $("#accordion").accordion();
 });

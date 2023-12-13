@@ -1,69 +1,101 @@
 [
-    {
-        "id": 1,
-        "name":" LD01 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/1.png"
-    },
-    {
-        "id": 2,
-        "name":" LD02 LOUNGE CHAIR",
-        "price": 250,
-        "image": "image/2.png"
-    },
-    {
-        "id": 3,
-        "name":" LD03 LOUNGE CHAIR",
-        "price": 290,
-        "image": "image/3.png"
-    },
-    {
-        "id": 4,
-        "name":" LD04 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/4.png"
-    },
-    {
-        "id": 5,
-        "name":" LD05 LOUNGE CHAIR",
-        "price": 300,
-        "image": "image/5.png"
-    },
-    {
-        "id": 6,
-        "name":" LD06 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/6.png"
-    },
-    {
-        "id": 7,
-        "name":" LD07 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/7.png"
-    },
-    {
-        "id": 8,
-        "name":" LD08 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/8.png"
-    },
-    {
-        "id": 8,
-        "name":" LD08 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/8.png"
-    },
-    {
-        "id": 8,
-        "name":" LD08 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/8.png"
-    },
-    {
-        "id": 8,
-        "name":" LD08 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/8.png"
-    }
+  {
+    "id": 1,
+    "name": "X Box Controller",
+    "price": 117.66,
+    "page": "product_details.html",
+    "image": "/img/cS-1.png"
+  },
 
+  {
+    "id": 2,
+    "name": " Sony Controller",
+    "price": 110,
+    "page": "index.Html",
+    "image": "/img/controller.png"
+  },
+  {
+    "id": 3,
+    "name": " Bose headphones (Active nose cancelling)",
+    "price": 350,
+    "page": "index.Html",
+    "image": "/img/Bose headphones.png"
+  },
+  {
+    "id": 4,
+    "name": " Boat earphones (High bass)",
+    "price": 50,
+    "page": "index.Html",
+    "image": "/img/Boat earphones.png"
+  },
+  {
+    "id": 5,
+    "name": " Vivo earbuds (with wired connectivity)",
+    "price": 100,
+    "page": "index.Html",
+    "image": "/img/Vivo earbuds.png"
+  },
+  {
+    "id": 6,
+    "name": " X Box Controller",
+    "price": 114,
+    "page": "index.Html",
+    "image": "/img/Controller2.png"
+  },
+  {
+    "id": 7,
+    "name": " Asus Tuf gaming laptop",
+    "price": 1900,
+    "page": "index.Html",
+    "image": "/img/Asus.png"
+  },
+  {
+    "id": 8,
+    "name": " GTA V (Best game of the year)",
+    "price": 50,
+    "page": "index.Html",
+    "image": "/img/GTA5.png"
+  },
+  {
+    "id": 9,
+    "name": " Spiderman 3 Game",
+    "price": 90,
+    "page": "index.Html",
+    "image": "/img/Spiderman Game.png"
+  },
+  {
+    "id": 10,
+    "name": " G69A Drone",
+    "price": 1200,
+    "page": "index.Html",
+    "image": "/img/drone.png"
+  },
+  {
+    "id": 11,
+    "name": " Asus Monitor",
+    "price": 1100,
+    "page": "index.Html",
+    "image": "/img/Asus Monitor.png"
+  },
+  {
+    "id": 12,
+    "name": " Gaming Mouse",
+    "price": 100,
+    "page": "index.Html",
+    "image": "/img/Mouse.png"
+  },
+  {
+    "id": 13,
+    "name": " Gaming Mouse",
+    "price": 100,
+    "page": "index.Html",
+    "image": "/img/Mouse.png"
+  },
+  {
+    "id": 14,
+    "name": " Gaming Mouse",
+    "price": 100,
+    "page": "index.Html",
+    "image": "/img/Mouse.png"
+  }
 ]

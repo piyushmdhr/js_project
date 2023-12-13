@@ -1,3 +1,5 @@
+/* shravan Choudhary 8941438 and Yagnesh Mehta 8884884 */
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
@@ -5,6 +7,40 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+}
+
+.imgSlider {
+  width: 70vw;
+  height: 70vh;
+  background-color: rgb(68, 66, 66);
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.image {
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transition: 0.9s ease-in-out;
+}
+button {
+  position: absolute;
+  z-index: 10;
+  font-size: 20px;
+}
+#right {
+  margin-left: 95%;
+  height: 100%;
+  width: 5%;
+  opacity: 1;
+}
+#left {
+  height: 100%;
+  width: 5%;
+  opacity: 1;
 }
 
 ul,
@@ -76,6 +112,7 @@ li {
   padding: 10px 20px;
   float: right;
   border: 1px solid #dc0506;
+  margin-left: 44vw;
 }
 
 .categories {
@@ -261,6 +298,7 @@ html .ui-button.ui-state-disabled:active {
 .Home-card {
   box-shadow: 0px 0px 5px 0px rgb(209, 111, 111);
   background-color: white;
+  height: 410px;
 }
 
 main h2 {
@@ -285,6 +323,7 @@ main h2 {
 .category-card {
   border: 1px solid #ddd;
   padding: 10px;
+  height: 410px;
   text-align: center;
   box-shadow: 0px 0px 5px 0px rgb(209, 111, 111);
   background-color: white;
@@ -346,7 +385,8 @@ main h2 {
 
 /* ... (remaining CSS content) ... */
 .add-to-cart {
-  display: inline-block;
+  /* display: inline-block; */
+  /* margin: 0 auto; */
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
