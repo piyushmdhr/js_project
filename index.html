@@ -1,15 +1,11 @@
-<!-- PIYUSH MANANDHAR / 8919221 -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="./css/product-details-style.css"
-      type="text/css"
-      rel="stylesheet"
-    />
+    <link href="./css/home.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/home1.css" />
+    <link rel="stylesheet" href="./css/jquery.bxslider.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -20,25 +16,24 @@
     <link rel="stylesheet" href="./js/jquery-ui.min.css" />
     <link rel="stylesheet" href="./css/lightslider.css" />
 
-    <title>Product Detail</title>
+    <title>Document</title>
   </head>
+
   <body>
     <header>
       <div id="nav-section-1">
         <img src="./img/FindStuff-logos_transparent.png" id="nav-title" />
         <nav>
           <ul class="menu-items">
-            <li><a href="#">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">Pages</a></li>
             <li><a href="#">Blogs</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="./aboutus.html">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <div class="menu-icons">
-          <i class="fa-solid fa-cart-shopping" id="cart"></i>
-        </div>
+        <div class="menu-icons">ICONS</div>
       </div>
 
       <div id="nav-section-2">
@@ -52,150 +47,132 @@
     </header>
 
     <main>
-      <p>
-        <a href="#">Home</a> > <a href="#">Microsoft</a> >
-        <a href="#" class="productTitle">Microsoft Xbox One S Controller</a>
-      </p>
-      <div class="container">
-        <div class="side-bar-1">
-          <h2>Product Categories</h2>
-          <ul>
-            <li><a href="#">Electronics</a></li>
-            <li><a href="#">Books</a></li>
-            <li><a href="#">Clothing & Apparel</a></li>
-            <li><a href="#">Health & Beauty</a></li>
-            <li><a href="#">Home, Garden & Kitchen</a></li>
-            <li><a href="#">Jewelry & Watches</a></li>
-            <li><a href="#">Hot Promotions</a></li>
-            <li><a href="#">Sports & Outdoors</a></li>
-            <li><a href="#">Other</a></li>
-          </ul>
+      <h2>Featured Products</h2>
+      <section class="Home-products">
+        <div class="Home-card">
+          <img src="./img/Laptop.jpeg" alt="Product 1" />
+          <hr />
+          <h3>HP Laptop</h3>
+          <p class="price">$49.99</p>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
 
-        <div id="dialog" title="Shopping Cart">
-          <p>Added To Cart</p>
+        <div class="Home-card">
+          <img src="./img/Image1.jpeg" alt="Product 1" />
+          <hr />
+          <h3>Motorola Edge</h3>
+          <p class="price">$49.99</p>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
 
-        <div class="details">
-          <div class="inner_details">
-            <div class="item">
-              <div class="clearfix" style="max-width: 500px">
-                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                  <li data-thumb="img/thumb/cS-1.jpg">
-                    <img src="img/cS-1.jpg" />
-                  </li>
-                  <li data-thumb="img/thumb/cS-2.jpg">
-                    <img src="img/cS-2.jpg" />
-                  </li>
-                  <li data-thumb="img/thumb/cS-3.jpg">
-                    <img src="img/cS-3.jpg" />
-                  </li>
-                  <li data-thumb="img/thumb/cS-4.jpg">
-                    <img src="img/cS-4.jpg" />
-                  </li>
-                  <li data-thumb="img/thumb/cS-5.jpg">
-                    <img src="img/cS-5.jpg" />
-                  </li>
-                  <li data-thumb="img/thumb/cS-6.jpg">
-                    <img src="img/cS-6.jpg" />
-                  </li>
-                  <li data-thumb="img/thumb/cS-7.jpg">
-                    <img src="img/cS-7.jpg" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="productDetails">
-              <h1 class="productTitle" id="productTitle">
-                Xbox Wireless Controller – Daystrike Camo Special Edition
-              </h1>
-              <div class="prices">
-                <span id="productPrice">$117.66</span>
-                <span id="productPriceBefore">$139.00</span>
-              </div>
-              <p id="productDescription">
-                The Microsoft Xbox One S Controller is a wireless game
-                controller designed for use with the Xbox One and compatible
-                with Windows 10 PCs. It was released as an updated version of
-                the original Xbox One controller and came with the Xbox One S
-                console
-              </p>
-
-              <div class="addToCartSection">
-                <div>
-                  <button class="quantityBtn" id="lessItem">-</button
-                  ><input type="text" id="itemQuantity" value="1" /><button
-                    class="quantityBtn"
-                    id="moreItem"
-                  >
-                    +
-                  </button>
-                </div>
-                <button id="addToCart">Add to Cart</button>
-              </div>
-              <p>SKU: WVN-09-1-4</p>
-              <p>Category: Electronics</p>
-              <p>Tags: Tag-01, Tag-04</p>
-            </div>
-          </div>
-          <div id="tabs">
-            <ul>
-              <li><a href="#tabs-1">Description</a></li>
-              <li><a href="#tabs-2">More Products</a></li>
-            </ul>
-            <div id="tabs-1">
-              <p>
-                The Microsoft Xbox One S Controller is a wireless game
-                controller designed for use with the Xbox One and compatible
-                with Windows 10 PCs. It was released as an updated version of
-                the original Xbox One controller and came with the Xbox One S
-                console.The product's specs are as follows:
-              </p>
-              <ul>
-                <li>
-                  Adjustable-tension thumbsticks let you set them exactly the
-                  level you want for ultimate control
-                </li>
-                <li>
-                  Shorter hair-trigger locks for refined gameplay • Six
-                  swappable thumbstick toppers, two D-pads, and four paddles
-                  included to tailor your controller into a configuration suited
-                  especially for you
-                </li>
-                <li>
-                  Save up to 3 custom profiles to the controller and switch
-                  between them on the fly
-                </li>
-                <li>
-                  Button mapping technology allows you to create customized
-                  button profiles to set up configurations unique to your
-                  specific play style or games
-                </li>
-                <li>
-                  Wrap-around rubberized grip is comfortable to hold and stays
-                  secure in your hands
-                </li>
-                <li>
-                  Xbox Accessories app lets you create custom profiles and
-                  button mapping arrangements that get saved directly to the
-                  controller so they are always ready to go
-                </li>
-                <li>
-                  Xbox Wireless, Bluetooth, or USB-C connectivity gives you many
-                  ways to get your controller connected to an Xbox One or to
-                  Windows 10 devices
-                </li>
-              </ul>
-            </div>
-
-            <div id="tabs-2">
-              <div id="moreProducts"></div>
-            </div>
-          </div>
+        <div class="Home-card">
+          <img src="./img/image2.jpeg" alt="Product 2" />
+          <hr />
+          <h3>Samsung Smart Watch</h3>
+          <p class="price">$79.99</p>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
+
+        <div class="Home-card">
+          <img src="./img/Image3.jpeg" alt="Product 3" />
+          <hr />
+          <h3>JBL Speakers</h3>
+          <p class="price">$99.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </section>
+
+      <h2>Featured Products</h2>
+      <section class="Home-products">
+        <div class="Home-card">
+          <img src="./img/printer.jpeg" alt="Product 1" />
+          <hr />
+          <h3>Printer</h3>
+          <p class="price">$49.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="Home-card">
+          <img src="./img/Gopro.jpeg" alt="Product 1" />
+          <hr />
+          <h3>GOpro</h3>
+          <p class="price">$49.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="Home-card">
+          <img src="./img/Home Theatre.jpeg" alt="Product 2" />
+          <hr />
+          <h3>Sony Home Theatre</h3>
+          <p class="price">$79.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="Home-card">
+          <img src="./img/PS5.jpeg" alt="Product 3" />
+          <hr />
+          <h3>Play Station 5</h3>
+          <p class="price">$99.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </section>
+
+      <h2>Featured Product Details</h2>
+      <ul class="bxslider">
+        <li>
+          <img class="sliderimg" src="./img/slider 1.jpg" />
+        </li>
+        <li>
+          <img class="sliderimg" src="./img/cS-11.jpg" />
+        </li>
+        <li>
+          <img class="sliderimg" src="./img/cS-12.jpg" />
+        </li>
+        <li>
+          <img class="sliderimg" src="./img/cS-13.jpg" />
+        </li>
+      </ul>
+      <!-- <section class="Home-details">
+    <div class="Home-details-card">
+      <img src="./img/image5.jpeg" alt="Product 4">
+      <div class="details">
+        <h3>Product Name 4</h3>
+        <p class="price">$129.99</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button class="add-to-cart">Add to Cart</button>
       </div>
+    </div>
 
+  </section> -->
+
+      <h2>Product Categories</h2>
+      <section class="Home-categories">
+        <div class="category-card">
+          <img src="./img/image6.jpeg" alt="Category 1" />
+          <hr />
+          <h3>Electronics</h3>
+          <!-- <a href="#">Shop Now</a> -->
+          <button class="add-to-cart">Shop Now</button>
+        </div>
+        <div class="category-card">
+          <img src="./img/image4.jpeg" alt="Category 2" />
+          <hr />
+          <h3>Smart Products</h3>
+          <!-- <a href="#">Shop Now</a> -->
+          <button class="add-to-cart">Shop Now</button>
+        </div>
+        <div class="category-card">
+          <img src="./img/Home.jpeg" alt="Category 3" />
+          <hr />
+          <h3>Home, Garden & Kitchen</h3>
+          <!-- <a href="#">Shop Now</a> -->
+          <button class="add-to-cart">Shop Now</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- ... (remaining HTML content) ... -->
+
+    <footer>
       <div class="care">
         <div>
           <div>
@@ -234,8 +211,6 @@
           </div>
         </div>
       </div>
-    </main>
-    <footer>
       <div class="footer-top">
         <div class="contact">
           <p class="footerHeader">Call To Order</p>
@@ -297,6 +272,8 @@
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/lightslider.js"></script>
     <script></script>
-    <script src="./js/product-details.js" type="module"></script>
+    <script src="./js/product-details.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
   </body>
 </html>

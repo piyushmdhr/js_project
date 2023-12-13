@@ -1,9 +1,9 @@
 // PIYUSH MANANDHAR / 8919221
 
-import { products } from "./products.js";
+import { moreProducts } from "./moreProducts.js";
 
 const renderProducts = () => {
-  products.forEach((object) => {
+  moreProducts.forEach((object) => {
     const cardDiv = document.createElement("div");
     const cardImg = document.createElement("img");
     const cardDivPara1 = document.createElement("p");

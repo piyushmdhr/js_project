@@ -1,0 +1,305 @@
+<!-- PIYUSH MANANDHAR / 8919221 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="./css/product-details-style.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./js/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./css/lightslider.css" />
+
+    <title>Product Detail</title>
+  </head>
+  <body>
+    <header>
+      <div id="nav-section-1">
+        <img src="./img/FindStuff-logos_transparent.png" id="nav-title" />
+        <nav>
+          <ul class="menu-items">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-icons">
+          <i class="fa-solid fa-cart-shopping" id="cart"></i>
+        </div>
+      </div>
+
+      <div id="nav-section-2">
+        <div class="categories">All Categories</div>
+        <div class="searchSection">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="search" placeholder="Enter your keyword..." />
+          <button id="searchBtn">Search</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <p>
+        <a href="./index.html">Home</a> > <a href="#">Microsoft</a> >
+        <a href="./product_details.html" class="productTitle"
+          >Microsoft Xbox One S Controller</a
+        >
+      </p>
+      <div class="container">
+        <div class="side-bar-1">
+          <h2>Product Categories</h2>
+          <ul>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Clothing & Apparel</a></li>
+            <li><a href="#">Health & Beauty</a></li>
+            <li><a href="#">Home, Garden & Kitchen</a></li>
+            <li><a href="#">Jewelry & Watches</a></li>
+            <li><a href="#">Hot Promotions</a></li>
+            <li><a href="#">Sports & Outdoors</a></li>
+            <li><a href="#">Other</a></li>
+          </ul>
+        </div>
+
+        <div id="dialog" title="Shopping Cart">
+          <p>Added To Cart</p>
+        </div>
+
+        <div class="details">
+          <div class="inner_details">
+            <div class="item">
+              <div class="clearfix" style="max-width: 500px">
+                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                  <li data-thumb="img/thumb/cS-1.jpg">
+                    <img src="img/cS-1.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-2.jpg">
+                    <img src="img/cS-2.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-3.jpg">
+                    <img src="img/cS-3.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-4.jpg">
+                    <img src="img/cS-4.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-5.jpg">
+                    <img src="img/cS-5.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-6.jpg">
+                    <img src="img/cS-6.jpg" />
+                  </li>
+                  <li data-thumb="img/thumb/cS-7.jpg">
+                    <img src="img/cS-7.jpg" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="productDetails">
+              <h1 class="productTitle" id="productTitle">
+                Xbox Wireless Controller – Daystrike Camo Special Edition
+              </h1>
+              <div class="prices">
+                <span id="productPrice">$117.66</span>
+                <span id="productPriceBefore">$139.00</span>
+              </div>
+              <p id="productDescription">
+                The Microsoft Xbox One S Controller is a wireless game
+                controller designed for use with the Xbox One and compatible
+                with Windows 10 PCs. It was released as an updated version of
+                the original Xbox One controller and came with the Xbox One S
+                console
+              </p>
+
+              <div class="addToCartSection">
+                <div>
+                  <button class="quantityBtn" id="lessItem">-</button
+                  ><input type="text" id="itemQuantity" value="1" /><button
+                    class="quantityBtn"
+                    id="moreItem"
+                  >
+                    +
+                  </button>
+                </div>
+                <button id="addToCart">Add to Cart</button>
+              </div>
+              <p>SKU: WVN-09-1-4</p>
+              <p>Category: Electronics</p>
+              <p>Tags: Tag-01, Tag-04</p>
+            </div>
+          </div>
+
+          <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1">Description</a></li>
+              <li><a href="#tabs-2">More Products</a></li>
+            </ul>
+            <div id="tabs-1">
+              <p>
+                The Microsoft Xbox One S Controller is a wireless game
+                controller designed for use with the Xbox One and compatible
+                with Windows 10 PCs. It was released as an updated version of
+                the original Xbox One controller and came with the Xbox One S
+                console.The product's specs are as follows:
+              </p>
+              <ul>
+                <li>
+                  Adjustable-tension thumbsticks let you set them exactly the
+                  level you want for ultimate control
+                </li>
+                <li>
+                  Shorter hair-trigger locks for refined gameplay • Six
+                  swappable thumbstick toppers, two D-pads, and four paddles
+                  included to tailor your controller into a configuration suited
+                  especially for you
+                </li>
+                <li>
+                  Save up to 3 custom profiles to the controller and switch
+                  between them on the fly
+                </li>
+                <li>
+                  Button mapping technology allows you to create customized
+                  button profiles to set up configurations unique to your
+                  specific play style or games
+                </li>
+                <li>
+                  Wrap-around rubberized grip is comfortable to hold and stays
+                  secure in your hands
+                </li>
+                <li>
+                  Xbox Accessories app lets you create custom profiles and
+                  button mapping arrangements that get saved directly to the
+                  controller so they are always ready to go
+                </li>
+                <li>
+                  Xbox Wireless, Bluetooth, or USB-C connectivity gives you many
+                  ways to get your controller connected to an Xbox One or to
+                  Windows 10 devices
+                </li>
+              </ul>
+            </div>
+
+            <div id="tabs-2">
+              <div id="moreProducts"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="care">
+        <div>
+          <div>
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <div class="care_details">
+            <h3>100% Genuine</h3>
+            <p>For all orders over $99</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <i class="fa-solid fa-rotate"></i>
+          </div>
+          <div class="care_details">
+            <h3>90 Days Return</h3>
+            <p>If goods have problems</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <i class="fa-regular fa-credit-card"></i>
+          </div>
+          <div class="care_details">
+            <h3>Secure Payment</h3>
+            <p>100% secure payment</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div class="care_details">
+            <h3>24/7 Support</h3>
+            <p>Ready to support customers</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="contact">
+          <p class="footerHeader">Call To Order</p>
+          <h1>+1 (519) 885-0300</h1>
+          <p><span>Address: </span> 108 University Ave, Waterloo, ON N2J 2W2</p>
+          <p><span>Email: </span>group2@conestoga.com</p>
+          <p>
+            <span>Follow: </span>
+            <span>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-pinterest"></i>
+            </span>
+          </p>
+        </div>
+        <div class="info">
+          <p class="footerHeader">Company Info</p>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Blogs</a>
+          <a href="#">Become A Vendor</a>
+          <a href="#">Business With Us</a>
+          <a href="#">Find a Store</a>
+        </div>
+        <div class="help">
+          <p class="footerHeader">Let us Help You</p>
+          <a href="#">Orders</a>
+          <a href="#">Checkout</a>
+          <a href="#">Downloads</a>
+          <a href="#">Addresses</a>
+          <a href="#">Account Details</a>
+          <a href="#">Lost Password</a>
+        </div>
+        <div class="links">
+          <p class="footerHeader">Quick Links</p>
+          <a href="#">Special Offers</a>
+          <a href="#">Gift Cards</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Portfolio</a>
+          <a href="#">FAQs</a>
+        </div>
+        <div class="useful">
+          <p class="footerHeader">Useful Links</p>
+          <a href="#">Flash Deal</a>
+          <a href="#">New Arrivals</a>
+          <a href="#">Personal Branding</a>
+          <a href="#">Best Seller</a>
+          <a href="#">Top Rating</a>
+          <a href="#">Search Trending</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright 2023. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/lightslider.js"></script>
+    <script></script>
+    <script src="./js/product-details.js" type="module"></script>
+  </body>
+</html>
